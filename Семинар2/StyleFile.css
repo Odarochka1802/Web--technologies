@@ -1,0 +1,170 @@
+@font-face {
+  font-family: 'Teddy Bear';
+  src: url('teddy_bear.eot'); /* IE 9 Compatibility Mode */
+  src: url('teddy_bear.eot?#iefix') format('embedded-opentype'), /* IE < 9 */ url('teddy_bear.woff2') format('woff2'), /* Super Modern Browsers */ url('teddy_bear.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */ url('teddy_bear.ttf') format('truetype'), /* Safari, Android, iOS */ url('teddy_bear.svg#teddy_bear') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+
+h1 {
+  color: #2F4F4F;
+  display: inline;
+  border-bottom: 3px solid #f9dd94;
+}
+
+a {
+  color: #FF00FF;
+}
+
+a:hover {
+  color: rgb(10, 10, 10);
+}
+
+h2 {
+  color: green;
+}
+
+h3 {
+}
+
+body {
+  background-image: url("fon.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+img {
+  width: 500px;
+}
+
+.bigtext {
+  font-size: 26px;
+  font-family: 'Teddy Bear', sans-serif;
+  color: steelblue;
+}
+
+ul {
+  list-style-type: square;
+
+}
+
+.border {
+  list-style: none;
+  padding: 0;
+}
+
+.border li {
+  font-family: "Trebuchet MS", "Lucida Sans", serif;
+  padding: 7px 20px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border-left: 10px solid #f05d22;
+  box-shadow: 2px -2px 5px 0 rgba(0, 0, 0, .1),
+  -2px -2px 5px 0 rgba(0, 0, 0, .1),
+  2px 2px 5px 0 rgba(0, 0, 0, .1),
+  -2px 2px 5px 0 rgba(0, 0, 0, .1);
+  font-size: 20px;
+  letter-spacing: 2px;
+  transition: 0.3s all linear;
+}
+
+.border li:nth-child(2) {
+  border-color: #8bc63e;
+}
+
+.border li:nth-child(3) {
+  border-color: #fcba30;
+}
+
+.border li:nth-child(4) {
+  border-color: #1ccfc9;
+}
+
+.border li:nth-child(5) {
+  border-color: #493224;
+}
+
+.border li:hover {
+  border-left: 10px solid transparent;
+}
+
+.border li:nth-child(1):hover {
+  border-right: 10px solid #f05d22;
+}
+
+.border li:nth-child(2):hover {
+  border-right: 10px solid #8bc63e;
+}
+
+.border li:nth-child(3):hover {
+  border-right: 10px solid #fcba30;
+}
+
+.border li:nth-child(4):hover {
+  border-right: 10px solid #1ccfc9;
+}
+
+.border li:nth-child(5):hover {
+  border-right: 10px solid #493224;
+}
+
+.bullet {
+margin-left: 0;
+list-style: none;
+counter-reset: li;
+}
+.bullet li {
+position: relative;
+margin-bottom: 1.5em;
+border: 3px solid #CADFCF;
+padding: 0.6em;
+border-radius: 4px;
+background: #FEFEFE;
+color: #231F20;
+  font-family: "Trebuchet MS", "Lucida Sans", serif;
+}
+.bullet li:before {
+position: absolute;
+top: -0.7em;
+padding-left: 0.4em;
+padding-right: 0.4em;
+font-size: 16px;
+font-weight: bold;
+color: #DCC24B;
+background: #FEFEFE;
+border-radius: 50%;
+counter-increment: li;
+content: counter(li);
+}
+
+body {
+  display: flex;
+  justify-content: center;
+}
+
+.layer1 {
+  background-color: #FFFAFA; /* Цвет фона под текстом параграфа */
+  color: black; /* Цвет текста */
+}
+
+
+.layer2 {
+  background: #F0FFFF;
+  color: #333;
+  border: 1px solid #e9e8e8;
+  border-radius: 3px;
+  word-wrap: break-word;
+  padding: 6px 10px;
+  line-height: 1.1rem;
+  font-size: .94rem;
+  overflow: auto;
+  font-family: "Fira Mono", "Courier New", Courier, monospace;
+}
+
+#classical {
+  font-family: 'Teddy Bear', sans-serif;
+}
+

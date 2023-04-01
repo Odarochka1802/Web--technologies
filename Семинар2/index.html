@@ -1,0 +1,109 @@
+<!doctype html>
+<html class="no-js" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>Создание первой веб-страницы</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fafafa">
+  <link href="StyleFile.css
+" rel="stylesheet">
+</head>
+<body>
+<div>
+  <h1>Что такое HTML и CSS?</h1>
+  <p class="layer1">
+    <strong>HTML</strong> (<em>HyperText Markup Language, язык разметки гипертекста</em>) задаёт структуру содержимого и
+    его смысл, определяя такой контент как, к примеру, заголовки, абзацы или изображения. <strong>CSS</strong> (<em>Cascading
+    Style Sheets</em>) или каскадные таблицы стилей — это язык презентаций созданный для оформления внешнего вида
+    контента, использующий, например, шрифты или цвета.
+    Эти два языка — HTML и CSS независимы друг от друга и должны таковыми и оставаться. CSS не должен быть написан
+    внутри HTML-документа и наоборот. Как правило, HTML всегда будет представлять содержимое, а CSS всегда будет
+    определять его оформление.
+    При таком понимании разницы между HTML и CSS давайте погрузимся в HTML более подробно.
+  </p>
+  <h2>Основные термины HTML</h2>
+  <h3>Элементы</h3>
+  <p class="layer1">
+    Элементы указывают, как определять структуру и содержимое объектов на странице. Некоторые из часто используемых
+    элементов включают в себя несколько уровней заголовков (определены как элементы с <span
+    class="tag">&lt;h1&gt;</span> до <span class="tag">&lt;h6&gt;</span>) и абзацев (определены как <span class="tag">&lt;p&gt;</span>);
+    в список можно включить элементы <span class="tag">&lt;a&gt;</span>, <span class="tag">&lt;div&gt;</span>, <span
+    class="tag">&lt;span&gt;</span>, <span class="tag">&lt;strong&gt;</span> и <span class="tag">&lt;em&gt;</span> и
+    многие другие.
+  </p>
+  <p class="layer1">
+    Элементы идентифицируются с помощью угловых скобок &lt;&gt;, окружающих имя элемента. Таким образом, элемент будет
+    выглядеть так:
+  </p>
+  <div class="layer2">
+    <span class="support tag"><span class="support tag">&lt;</span><span class="support tag-name">a</span></span>
+    <span class="support tag close">&gt;</span>
+  </div>
+  <h3>Теги</h3>
+  <p class="layer1">
+    Добавление угловые скобок &lt; и &gt; вокруг элемента создаёт то, что известно как тег. Теги наиболее часто
+    встречаются в парах открывающих и закрывающих тегов.
+  </p>
+  <p class="layer1">
+    Так, теги ссылок будут выглядеть примерно так:
+  </p>
+
+  <div class="layer2">
+    <span class="support tag"><span class="support tag">&lt;</span><span class="support tag-name">a</span></span>
+    <span class="support tag close">&gt;</span>
+    "..."
+    <span class="support tag"><span class="support tag">&lt;</span><span class="support tag special">/</span><span
+      class="support tag-name">a</span></span>
+    <span class="support tag close">&gt;</span>
+  </div>
+
+  <h3>Атрибуты</h3>
+  <p class="layer1">
+    Атрибуты являются свойствами, применяемыми для предоставления дополнительной информации об элементе. Наиболее
+    распространённые атрибуты включают в себя атрибут <span class="attribute">id</span>, который идентифицирует элемент;
+    атрибут <span class="attribute">class</span>, который классифицирует элемент; атрибут <span
+    class="attribute">src</span>, который определяет источник встраиваемого содержимого; и атрибут <span
+    class="attribute">href</span>, который указывает ссылку на связанный ресурс.
+  </p>
+  <hr>
+  <h3 id="classical">Ludovico Einaudi</h3>
+  <p class="layer1">Ссылка на неокласика. Разбавить серьезность</p>
+  <a href="https://music.yandex.ru/album/15934823">Альбом 2021 года Cinema</a>
+  <hr>
+  <img
+    src="data:image/jpeg;base64,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"
+    alt="Картинка (создание сайта самостоятельно)">
+  <p class="bigtext">
+    Картинка с абсолютной ссылкой✅
+  </p>
+  <img src="123.jpg" alt="Мемчик">
+  <p class="bigtext">
+    Картинка с относительной ссылкой✅
+  </p>
+  <h3>Я умею</h3>
+  <ul class="border">
+    <li>Вставлять картинки</li>
+    <li>Делать заголовки</li>
+    <li>Добавлять текст</li>
+    <li>Работать со списками</li>
+    <li>Я даже когда-то создала многостраничный рекламный сайт для СТО, но всё забыла(</li>
+  </ul>
+  <h3>Я хочу</h3>
+  <ol class="bullet">
+    <li>Узнать есть ли еще перспектива в изучении созданию сайтов? Сейчас много приложений, ИИ и вообще не прошлый ли
+      это этап?
+    </li>
+    <li>Сесть на шпагат)</li>
+    <li>Лета! Ну хотябы весны... А не -8 в конце марта и снег по колени🥲(( Я уже убрала всю зимнюю одежду...</li>
+  </ol>
+</div>
+<footer>
+  <p>Моё творение. Наляписто, конечно, но хотела яркости и потренироваться. Текст взят с сайта <a
+    href="https://webref.ru/layout/learn-html-css/first-web-page">webref.ru</a></p>
+</footer>
+</body>
+
+
+</html>
